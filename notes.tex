@@ -7,12 +7,16 @@
 
 \newcommand{\dw}[2]{\textbf{#1}\hspace{1em}\textit{#2}\\}
 \newcommand{\tl}[2]{``#1''\\\textit{#2}}
+\newcommand{\resp}[4]{%
+  \tl{#1}{#2} \\
+  \tl{#3}{#4}
+}
 
 \begin{document}
 \maketitle
 \newpage
-\begin{multicols}{2}
 \section{Vocabulary}
+\begin{multicols}{2}
 \subsection{Nouns}
 \subsubsection{Food}
 \dw{mvura}{water}
@@ -84,12 +88,46 @@
 \dw{muimbi}{singer}
 \dw{mambo}{king}
 
-\subsubsection{Weather/Time}
+\subsubsection{Weather}
 \dw{kunaya}{raining}
 \dw{kupisa}{hot}
 \dw{hutonhora}{cold}
 \dw{zuva}{sun/day}
 \dw{gore}{year/cloud}
+
+\subsubsection{Time (Today)}
+\dw{mangwanani}{morning}
+\dw{masikati}{afternoon}
+\dw{maneru}{evening}
+\dw{nezuro}{yesterday}
+\dw{nhasi}{today}
+
+\subsubsection{Days of the Week}
+\dw{muvhuro}{monday}
+\dw{chipiri}{tuesday}
+\dw{chitatu}{wednesday}
+\dw{china}{thursday}
+\dw{chishanu}{friday}
+\dw{mugovera}{saturday}
+\dw{svondo}{sunday}
+
+\subsubsection{Time (Weeks)}
+\dw{vhiki/svondo}{week}
+\dw{vhiki rino}{this week}
+\dw{vhiki rakapera}{last week}
+\dw{vhiki rinouya}{next week}
+
+\subsubsection{Time (Months)}
+\dw{mwedzi}{month}
+\dw{mwedzi uno}{this month}
+\dw{mwedzi wakapera}{last month}
+\dw{mwedzi unouya}{next month}
+
+\subsubsection{Time (Years)}
+\dw{gore}{year}
+\dw{gore rino}{this year}
+\dw{gore rakapera}{last year}
+\dw{gore rinouya}{next year}
 
 \subsubsection{Other}
 \dw{zororo}{break}
@@ -169,33 +207,94 @@
 \dw{Handikudi}{I don't love you}
 \dw{Handiende}{I don't go}
 \dw{Handisi}{I am not}
+\dw{Hausi}{You are not}
+\dw{Hatisi}{We are not}
+\dw{Hamusi}{You are not (plural)}
 \dw{Handidyi}{I don't eat}
 \dw{Handinwi}{I don't drink}
 \dw{Handigezi}{I don't bathe}
-\dw{Haarare}{}
+\dw{Haarare}{He/she does not sleep}
+
+\subsection{Phrases/Sentence Fragments}
+
+\subsubsection{Common Phrases}
+\dw{nguva dzose}{all the time}
+\dw{mazuva ose}{everyday}
+\dw{mazuvano}{these days}
+\dw{roga-roga}{each and every}
+\dw{mangwanani ano}{this morning}
+\dw{kuma}{around}
+\dw{manje-manje}{soon}
+\dw{marimwezuro}{two days ago}
+
+\subsubsection{Numbers}
+\dw{motsi}{one}
+\dw{piri}{two}
+\dw{tatu}{three}
+\dw{ina}{four}
+\dw{shanu}{five}
+\dw{tanhatu}{six}
+\dw{nomwe}{seven}
+\dw{sere}{eight}
+\dw{pfumbamwe}{nine}
+\dw{gumi}{ten}
+
 \end{multicols}
 
-\section{May 28}
+\section{Full Conversation}
+
 \subsection{Greetings}
+
 \subsection{About You}
 \begin{enumerate}
-\item \tl{Unonzi ani?}{What is your name?} \\ \tl{Ndinonzi Mufaro.}{My name is Mufaro.}
-\item \tl{Unogara kupi?}{Where do you live?} \\ \tl{Ndinogara kuHouston}{I live in Houston.}
-\item \tl{}{}
+\item \resp{Unonzi ani?}{What is your name?}{Ndinonzi Mufaro.}{My name is Mufaro.}
+\item \resp{Unogara kupi?}{Where do you live?}{Ndinogara kuHouston}{I live in Houston.}
+\item \resp{Unogara nani?}{Who do you live with?}{Ndinogara na amai na baba na Tinofara}{I live with my mother, my father, and Tinofara.}
+\item \resp{Une makore mangani}{How old are you?}{Ndine makore gumi nemapfumbamwe gore.}{I am nineteen years old.}
+\item \resp{Chii chaunofarira kudya?}{What do you like to eat?}{Ndinofarira kudya nyama yemombe ne mupanga uye inwa mvura kutonhora.}{I like to eat beef with rice and drink cold water.}
+\item \resp{Chii chaunofarira kuita?}{What do you like to do}{Ndinofarira kugadzira mota yangu uye kurara zvakanaka.}{I like to fix my car and sleep}
+\item \resp{Chikoro chako chinonzi chii?}{What is the name of your school?}{Chikoro chanugu chinonzi UBC.}{The name of my school is UBC.}
+\item \resp{Mudzidzisi wako anonzi ani?}{What is the name of your teacher?}{Mudzidzisi wangu anonzi John.}{My teacher is named John.}
+\item \resp{Shamwari yako inonzi ani?}{What is your friend's name?}{Shamwari yangu inonzi Kevin.}{My friend is named Kevin.}
+\item \resp{Hanzvadzi yako ndiani?}{Who is your brother if you are female or sister if you are male?}{Handina hanzvadzi.}{I do not have a sister.}
+\item \resp{Munin'ina wako anonzi ani?}{What is the name of your younger sister (if you are female) or younger brother (if you are male)?}{Handina munin'ina.}{I don't have a younger brother.}
+\item \resp{Mukomana wako ndiani?}{Who is your older brother (if you are male) or older sister (if you are female)?}{Mukomana wangu ndiTinofara.}{My older brother is named Tinofara.}
+\item \resp{Kumusha kwenyu ndekupi?}{Where is your rural home?}{Kumusha kwedu kuri kunze kweGweru.}{Our home is outside of Gweru.}
+\item \resp{Ambuya vako vanonzi ani?}{What is your grandmother's name?}{Ambuya vangu vanonzi Jane.}{My grandmother's name is Jane.}
+\item \resp{Sekuru vako vanonzi ani?}{What is your grandfather's name?}{Handizivi anonzi Sekuru vangu.}{I don't know what my grandfather's name is.}
+\item \resp{Unoerei?}{What is your totem?}{Ndinoera shumba.}{My totem is the lion.}
+\item \resp{Musikana/Mukomana wako ndiani?}{Who is your girlfriend/boyfriend?}{Handina musikana.}{I don't have a girlfriend.}
+\item \resp{Unoshanda kupi?}{Where do you work?}{Handiende basa.}{I don't go to work.}
 \end{enumerate}
 
 \section{June 4}
 \subsection{Pre-Class Homework}
 \begin{enumerate}
-\item \tl{Handidi ipa Tinofara ndibhachi!}{I don't want to give Tinofara my coat!}
-\item \tl{Handina nguva taura, kurumidza.}{I don't have time to talk, hurry up.}
-\item \tl{Handizivi gadzira ndimota nokuti handina nguva dzidz gadzira.}{I don't know how to fix my car because I don't have the time to learn repair.}
-\item \tl{Handikudi nokuti handisi nofara.}{I don't love you because I am not happy.}
-\item \tl{Handiende kuchikoro nokuti kutonhora uye kunaya!}{I don't go to school because it's cold and raining.}
-\item \tl{Handisi fara nokuti ndiamai nababa rasa Kiki, ndihuku.}{I am not happy because my mother and father sold Kiki, my chicken.}
-\item \tl{Handidyi na mombe na mbudzi na huku na hove na mbongoro na imbwa! Ndiri vegetarian.}{I don't eat cow, goat, chicken, fish, donkey, and dog! I'm vegetarian.}
-\item \tl{Handinwi mvura kupisa.}{I don't drink hot water.}
+\item \tl{Handidi kupa Tinofara bhachi rangu!}{I don't want to give Tinofara my coat!}
+\item \tl{Handina nguva kurumidza kutaura.}{I don't have time to talk, hurry up.}
+\item \tl{Handizivi kugadzira mota nokuti handina kuwuna nguva yekudzidzira kugadzira motakari.}{I don't know how to fix my car because I don't have the time to learn repair.}
+\item \tl{Handikudi nokuti hanisi kufara.}{I don't love you because I am not happy.}
+\item \tl{Handiende kuDeutschland nokuti handi taurai Deutsch!}{I don't go to Germany because I don't speak German.}
+\item \tl{Nasi, handisi kuenda kuchikoro nokuti kuri kutonhora ne kunaya.}{Today, I will not go to school because it is raining and cold.}
+\item \tl{Handidyi mombe ne mbudzi ne huku ne hove ne mbongoro ne imbwa nokuti ndiri vegetarian.}{I don't eat cow, goat, chicken, fish, donkey, and dog because I'm vegetarian.}
+\item \tl{Handinwi mvura inopisa.}{I don't drink hot water.}
 \item \tl{Handigezi kuchikoro.}{I don't bathe at school.}
 \item Haarare means
+\end{enumerate}
+
+\subsection{Post-Class Homework}
+\begin{enumerate}
+\item \tl{Handidi kuenda kuchikoro.}{I don't want to go to school.}
+\item \tl{Handina marii ye zvipfeko.}{I don't have enough money for the clothes.}
+  \begin{enumerate}
+  \item \tl{Anoita marii madomasi?}{How much are the tomatoes?}
+  \end{enumerate}
+\item \tl{Handizivi anonzi yako\footnote{Missing: who's name it is?}.}{I don't know the name.}
+\item \tl{Handikudi nhasi.}{I don't love you today.}
+\item \tl{Handiende kubasa mangwanani ano.}{I don't go to work this morning.}
+\item \tl{Handisi mutambi.}{I am not an actor/playing.}
+\item \tl{Handidyi nguruve.}{I don't eat pork.}
+\item \tl{Handinwi Doro asi ndanwa mukaka.}{I don't drink beer but I drink milk.}
+\item \tl{Handigezi manheru.}{I don't bathe in the evening.}
 \end{enumerate}
 \end{document}
